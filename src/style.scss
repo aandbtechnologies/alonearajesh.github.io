@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+$logo-image: url("./images/lg.png");
+//css presets
+* {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-kerning: auto;
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+.person-app {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-style: normal;
+  .navHeader {
+    width: 100%;
+    .main-nav {
+      position: fixed;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: auto;
+      z-index: 1000;
+      display: flex;
+      justify-content: start;
+      width: 100%;
+      height: 90px;
+      padding-bottom: 20px;
+      align-items: flex-end;
+      border-bottom: 1px solid #efefef;
+      background-color: #505050;
+      &-logo {
+        box-sizing: content-box;
+      }
+      &-img {
+        background-image: $logo-image;
+        text-indent: -9999em;
+        display: inline-block;
+        height: 64px;
+        width: 150px;
+        margin-left: 5%;
+      }
+    }
+  }
+}
