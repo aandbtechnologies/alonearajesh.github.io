@@ -1,4 +1,5 @@
 import React from 'react';
+import {Home} from '../src/views/Home';
 
 export default class App extends React.Component {
     constructor(props) {
@@ -6,13 +7,7 @@ export default class App extends React.Component {
     }
     render() {
         return (
-            <div className="container">
-                <nav className="navHeader">
-                    <div className="main-nav">
-                        <div className="main-nav-logo"><span className="main-nav-img">Rajesh Alonea</span></div>
-                    </div>
-                </nav>
-            </div>
+          <Home/>
         );
     }
 }
